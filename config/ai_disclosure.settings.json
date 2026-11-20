@@ -1,0 +1,17 @@
+{
+  "_config_name": "ai_disclosure.settings",
+  "enabled_bundles": [
+    "article",
+    "page",
+    "post"
+  ],
+  "default_level": "human_only",
+  "default_editorial_responsibility": "[site:name]",
+  "display_mode": "card",
+  "display_position": "bottom",
+  "show_human_only_badge": false,
+  "show_eu_icons": true,
+  "enable_iptc_meta": true,
+  "enable_schema_org_jsonld": true,
+  "custom_disclaimer_text": ""
+}

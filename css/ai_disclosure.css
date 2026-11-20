@@ -1,0 +1,299 @@
+/**
+ * @file
+ * Styling for AI Content Disclosure cards, badges, and icons.
+ */
+
+.ai-disclosure-wrapper {
+  margin: 1.5rem 0;
+  clear: both;
+}
+
+/* Notice Card */
+.ai-disclosure-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  border-left-width: 5px;
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ai-disclosure-card--human {
+  border-left-color: #3b82f6;
+  background-color: #f0f7ff;
+}
+
+.ai-disclosure-card--assisted {
+  border-left-color: #0d9488;
+  background-color: #f0fdfa;
+}
+
+.ai-disclosure-card--generated {
+  border-left-color: #7c3aed;
+  background-color: #faf5ff;
+}
+
+.ai-disclosure-card--synthetic {
+  border-left-color: #d97706;
+  background-color: #fffbeb;
+}
+
+.ai-disclosure-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ai-disclosure-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.ai-disclosure-card--human .ai-disclosure-card__icon {
+  color: #2563eb;
+}
+
+.ai-disclosure-card--assisted .ai-disclosure-card__icon {
+  color: #0d9488;
+}
+
+.ai-disclosure-card--generated .ai-disclosure-card__icon {
+  color: #7c3aed;
+}
+
+.ai-disclosure-card--synthetic .ai-disclosure-card__icon {
+  color: #d97706;
+}
+
+.ai-disclosure-card__title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.ai-disclosure-card__body {
+  margin: 0;
+  color: #334155;
+}
+
+.ai-disclosure-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+}
+
+.ai-disclosure-card__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ai-disclosure-card__notes {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 3px solid #cbd5e1;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.ai-disclosure-card__disclaimer {
+  margin-top: 0.4rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.825rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Compact Badge */
+.ai-disclosure-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.825rem;
+  font-weight: 500;
+  line-height: 1.25;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.ai-disclosure-badge--human {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.ai-disclosure-badge--assisted {
+  background-color: #f0fdfa;
+  color: #0f766e;
+  border-color: #99f6e4;
+}
+
+.ai-disclosure-badge--generated {
+  background-color: #faf5ff;
+  color: #6b21a8;
+  border-color: #e9d5ff;
+}
+
+.ai-disclosure-badge--synthetic {
+  background-color: #fffbeb;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+.ai-disclosure-badge .ai-disclosure-svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Icon Only */
+.ai-disclosure-icon-only {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.ai-disclosure-icon-only .ai-disclosure-svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* SVG Vector Default */
+.ai-disclosure-svg {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* Compliance Dashboard KPIs & Filter */
+.ai-disclosure-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ai-disclosure-kpi-card {
+  padding: 1.25rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ai-disclosure-kpi-card__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.ai-disclosure-kpi-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.ai-disclosure-kpi-card__subtext {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+}
+
+.ai-disclosure-kpi-card--highlight {
+  border-left: 4px solid #3b82f6;
+}
+
+.ai-disclosure-kpi-card--success {
+  border-left: 4px solid #10b981;
+}
+
+.ai-disclosure-kpi-card--warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.ai-disclosure-kpi-card--danger {
+  border-left: 4px solid #ef4444;
+}
+
+.ai-disclosure-report-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Dark theme adjustments */
+@media (prefers-color-scheme: dark) {
+  .ai-disclosure-card {
+    border-color: #334155;
+    background-color: #1e293b;
+    color: #f1f5f9;
+  }
+
+  .ai-disclosure-card__title {
+    color: #f8fafc;
+  }
+
+  .ai-disclosure-card__body {
+    color: #cbd5e1;
+  }
+
+  .ai-disclosure-card__notes {
+    background-color: rgba(15, 23, 42, 0.6);
+    border-left-color: #475569;
+    color: #94a3b8;
+  }
+
+  .ai-disclosure-card__meta,
+  .ai-disclosure-card__disclaimer {
+    color: #94a3b8;
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .ai-disclosure-card--human {
+    background-color: #0c1a30;
+    border-left-color: #60a5fa;
+  }
+
+  .ai-disclosure-card--assisted {
+    background-color: #042f2e;
+    border-left-color: #2dd4bf;
+  }
+
+  .ai-disclosure-card--generated {
+    background-color: #241442;
+    border-left-color: #c084fc;
+  }
+
+  .ai-disclosure-card--synthetic {
+    background-color: #2e1a05;
+    border-left-color: #f59e0b;
+  }
+}

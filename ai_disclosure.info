@@ -1,0 +1,7 @@
+name = AI Disclosure
+description = Provides transparent provenance tracking and disclosure badges for synthetic and AI-assisted content.
+backdrop = 1.x
+php = 8.2
+type = module
+package = AI
+configure = admin/config/ai/ai-disclosure
